@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Equipo, Encontra tu proximo rival</title>
+    <link href="/css/styles.css" rel="stylesheet">
+    <link rel="icon" href="/img/friedpotato.ico" type="image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+</head>
+
+<body>
+    <div class="containermain">
+
+        <header>
+            <h1> <a class="titulo" href="/buscador"> Tu Equipo</a> </h1>
+            <nav>
+                <div>
+                    <ul>
+                        <li class="cajaDesplegable">
+                            <p class="tituloPerfil">Perfil</p>
+                            <ul class="listaPerfil">
+                                <div class="cajaPerfil">
+                                    <li class="fotoPerfil"><img class="fotoPerfil1" th:if="${session.usuariosession.foto != null}"
+                                            th:src="@{/cargar/__${session.usuariosession.foto.id}__}" width="65px"
+                                            height="65px">
+                                        <img class="fotoPefil" th:unless="${session.usuariosession.foto != null}"
+                                            src="/img/logo.jpg" width="65px" height="65px"></li><br>
+                                </div>
+                                <div class="cajaPerfil1">
+                                    <li class="infoPerfil">
+                                        <p class="infoPerfil" th:text="${session.usuariosession.nombre}"></p>
+                                    </li><br>
+                                    <li class="infoPerfil">
+                                        <p class="infoPerfil" th:text="${session.usuariosession.tipo}"></p>
+                                    </li><br>
+                                    <li class="infoPerfil">
+                                        <p class="infoPerfil" th:text="${session.usuariosession.categoria}"></p>
+                                    </li><br>
+                                    <li class="infoPerfil">
+                                        <p class="infoPerfil" th:text="${session.usuariosession.mail}"></p>
+                                    </li><br>
+                                </div>
+                                <div class="cajaPerfil2">
+                                    <li>
+                                        <form class="cambiar" id="disponible" th:action="@{/usuario/disponibilidad}"
+                                            method="POST">
+                                            <p class="cambiar1"> Mostrar mi equipo:
+                                                <br>
+                                                <div class="cambiar2">
+                                                <input type="hidden" name="nombre"
+                                                    th:value="${session.usuariosession.nombre}">
+                                                <input type="radio" id="disponible_true" name="disponible"
+                                                    value="True" />
+                                                Disponible
+                                                <input type="radio" id="disponible_false" name="disponible"
+                                                    value="False" />
+                                                No disponible
+                                                <br>
+                                                <button class="cambiarBoton" type="submit"> Cambiar </button>
+                                                </div>
+                                            </p>
+                                        </form>
+                                    </li>
+                                </div>
+                                <div class="cajaPerfil3">
+                                    <li class="modificarPerfil">
+                                        <a class="modificarPerfil1" th:href="@{/usuario/mostrarPerfil(nombre=${session.usuariosession.nombre})}">Modificar
+                                            Perfil</a></li>
+                                    <li>
+                                </div>
+                                <div class="cajaPerfil4">
+                                    <form class="eliminarEquipo" th:action="@{/usuario/eliminar-perfil}" method="POST">
+                                        <input type="hidden" name="nombre" th:value="${session.usuariosession.nombre}">
+                                        <button class="eliminarEquipo1" th:data-confirm-delete="|¿Estás seguro que quieres eliminar tu equipo ${session.usuariosession.nombre}?|"
+                                            onclick="if (!confirm(this.getAttribute('data-confirm-delete'))) return false">Eliminar equipo
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="cajaPerfil5">
+                                    <li class="botonSalir"> <a class="botonSalir1" href="/logout"> Cerrar Sesión</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <article>
+                <div class="filtros">
+
+                    <fieldset>
+                        <div class="filtros-izq">
+
+                            <b>
+                                <p class="p">Filtrar por zonas:</p>
+                            </b>
+                            <form>
+                                <label>
+                                    <input type="checkbox" name="zonas" value="CAPITAL" id="CAPITAL"
+                                        th:text=" ' Capital ('+ ${CAPITAL} +')'" /> </label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="zonas" value="GODOY_CRUZ" id="GODOY_CRUZ"
+                                        th:text=" ' Godoy Cruz ('+ ${GODOY_CRUZ} +')'"></label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="zonas" value="GUAYMALLEN" id="GUAYMALLEN"
+                                        th:text=" ' Guaymallen ('+ ${GUAYMALLEN} +')'"></label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="zonas" value="LAS_HERAS" id="LAS_HERAS"
+                                        th:text=" ' Las Heras ('+ ${LAS_HERAS}+')'"></label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="zonas" value="LUJAN_DE_CUYO" id="LUJAN_DE_CUYO"
+                                        th:text=" ' Lujan de Cuyo ('+ ${LUJAN_DE_CUYO}+')'"></label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="zonas" value="MAIPU" id="MAIPU"
+                                        th:text=" ' Maipu ('+ ${MAIPU}+')'"></label>
+                            </form>
+
+                            <b>
+                                <p class="p">Filtrar por tipo:</p>
+                            </b>
+                            <form>
+                                <label>
+                                    <input type="checkbox" name="tipos" value="MASCULINO" id="MASCULINO"
+                                        th:text=" ' Masculino ('+ ${MASCULINO} +')'"></label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="tipos" value="FEMENINO" id="FEMENINO"
+                                        th:text=" ' Femenino ('+ ${FEMENINO} +')'"></label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="tipos" value="MIXTO" id="MIXTO"
+                                        th:text=" ' Mixto ('+ ${MIXTO} +')'"></label>
+                            </form>
+
+                            <b>
+                                <p class="p">Filtrar por turno:</p>
+                            </b>
+                            <form>
+                                <label>
+                                    <input type="checkbox" name="turnos" value="MANANA" id="MAÑANA"
+                                        th:text=" ' Mañana ('+ ${MANANA} +')'"></label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="turnos" value="TARDE" id="TARDE"
+                                        th:text=" ' Tarde ('+ ${TARDE} +')'"></label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="turnos" value="NOCHE" id="NOCHE"
+                                        th:text=" ' Noche ('+ ${NOCHE} +')'"></label>
+                            </form>
+                        </div>
+
+                        <div class="filtros-der">
+
+                            <b>
+                                <p class="p">Filtrar por días:</p>
+                            </b>
+                            <form>
+                                <label>
+                                    <input type="checkbox" name="dias" value="LUNES" id="LUNES"
+                                        th:text=" ' Lunes ('+ ${LUNES} +')'"></label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="dias" value="MARTES" id="MARTES"
+                                        th:text=" ' Martes ('+ ${MARTES} +')'"></label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="dias" value="MIERCOLES" id="MIERCOLES"
+                                        th:text=" ' Miercoles ('+ ${MIERCOLES} +')'"></label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="dias" value="JUEVES" id="JUEVES"
+                                        th:text=" ' Jueves ('+ ${JUEVES} +')'"></label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="dias" value="VIERNES" id="VIERNES"
+                                        th:text=" ' Viernes ('+ ${VIERNES} +')'"></label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="dias" value="SABADO" id="SABADO"
+                                        th:text=" ' Sabado ('+ ${SABADO} +')'"></label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="dias" value="DOMINGO" id="DOMINGO"
+                                        th:text=" ' Domingo ('+ ${DOMINGO} +')'"></label>
+                            </form>
+
+                            <b>
+                                <p class="p">Filtrar por categoría:</p>
+                            </b>
+                            <form>
+                                <label>
+                                    <input type="checkbox" name="categoria" value="JUVENIL" id="JUVENIL"
+                                        th:text=" ' Juvenil ('+ ${JUVENIL} +')'"></label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="categoria" value="INTERMEDIO" id="INTERMEDIO"
+                                        th:text=" ' Intermedio ('+ ${INTERMEDIO} +')'"></label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="categoria" value="SENIOR" id="SENIOR"
+                                        th:text=" ' Senior ('+ ${SENIOR} +')'"></label>
+                            </form>
+
+                            <b>
+                                <p class="p">Filtrar por cantidad de jugadores:</p>
+                            </b>
+                            <form>
+                                <label>
+                                    <input type="checkbox" name="jugadores" value="CINCO" id="CINCO"
+                                        th:text=" ' 5 ('+ ${CINCO} +')'"></label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="jugadores" value="SIETE" id="SIETE"
+                                        th:text=" ' 7 ('+ ${SIETE} +')'"></label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="jugadores" value="ONCE" id="ONCE"
+                                        th:text=" ' 11 ('+ ${ONCE} +')'"></label>
+                            </form>
+                        </div>
+                    </fieldset>
+                </div>
+            </article>
+
+            <aside>
+                <div class="tablas">
+
+                    <table>
+                        <thead>
+                            <th colspan="4">Equipos disponibles</th>
+                            <tr>
+                                <th>Foto Perfil</th>
+                                <th>Nombre del Equipo</th>
+                                <th>Teléfono Capitán</th>
+                                <th>Teléfono Co Capitán</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr th:each="equipo : ${equipos}">
+                                <td class="equipo"
+                                    th:attr="data-id=${equipo.nombre},data-category=${equipo.zona + ' '} + ${equipo.tipo + ' '} + ${equipo.turno + ' '} + ${equipo.dia + ' '} + ${equipo.categoria + ' '} + ${equipo.cantidadJugadores}">
+                                    <img th:if="${equipo.foto != null}" th:src="@{/cargar/__${equipo.foto.id}__}"
+                                        width="65px" height="65px">
+                                    <img th:unless="${equipo.foto != null}" src="/img/logo.jpg" width="65px"
+                                        height="65px">
+                                </td>
+                                <td class="equipo"
+                                    th:attr="data-id=${equipo.nombre},data-category=${equipo.zona + ' '} + ${equipo.tipo + ' '} + ${equipo.turno + ' '} + ${equipo.dia + ' '} + ${equipo.categoria + ' '} + ${equipo.cantidadJugadores}"
+                                    th:text="${equipo.nombre}"></td>
+                                <td class="equipo"
+                                    th:attr="data-id=${equipo.nombre},data-category=${equipo.zona + ' '} + ${equipo.tipo + ' '} + ${equipo.turno + ' '} + ${equipo.dia + ' '} + ${equipo.categoria + ' '} + ${equipo.cantidadJugadores}">
+                                   <img src="/img/imagen-whatsapp.jpg" width="8px" heidt="8px" alt=""> <a class="numeroTel" target="blank"  th:text="${equipo.numero1}"
+                                        th:href="@{'https://api.whatsapp.com/send?phone=549' + ${equipo.numero1} + '&text=Hola!%20Quiero%20jugar%20contra%20ustedes!'}">
+                                </td>
+                                <td class="equipo"
+                                    th:attr="data-id=${equipo.nombre},data-category=${equipo.zona + ' '} + ${equipo.tipo + ' '} + ${equipo.turno + ' '} + ${equipo.dia + ' '} + ${equipo.categoria + ' '} + ${equipo.cantidadJugadores}">
+                                    <img src="/img/imagen-whatsapp.jpg" width="8px" heidt="8px" alt=""> <a class="numeroTel" target="blank" th:text="${equipo.numero2}"
+                                        th:href="@{'https://api.whatsapp.com/send?phone=549' + ${equipo.numero2} + '&text=Hola!%20Quiero%20jugar%20contra%20ustedes!'}">
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </aside>
+
+        </main>
+
+        <footer>
+            <div>
+                <p> Copyright © 2020 - Tu Equipo </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script language="JavaScript" type="text/javascript" src="/js/filtro.js"></script>
+    <script>
+        if ([[${ session.usuariosession.disponible }]]) {
+            document.getElementById("disponible_true").checked = true;
+        } else {
+            document.getElementById("disponible_false").checked = true;
+        }
+    </script>
+</body>
+
+</html>

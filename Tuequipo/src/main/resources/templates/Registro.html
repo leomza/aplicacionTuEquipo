@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Equipo, Encontra tu proximo rival</title>
+    <link href="/css/styles.css" rel="stylesheet">
+    <link rel="icon" href="/img/friedpotato.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="containermain">
+        <header>
+            <h1> <a class="titulo" href="/"> Tu Equipo</a> </h1>
+            <nav>
+                <div>
+                    <ul>
+                        <li> <a class="listanav1" href="/login"> Iniciar Sesion</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="error">
+                <p th:if="${error !=null}" th:text="${error}" class="errorRegistro"></p>
+            </div>
+            <h3 class="tituloRegistro">Nuevo Registro</h3>
+            <div class="formulario">
+                <form action="/registrar" method="POST" enctype="multipart/form-data">
+
+                    <input class="formularioRegistro" type="text" placeholder="Nombre Equipo" maxlength="20"
+                        name="nombre" required th:value="${nombre}"><br>
+                    <input class="formularioRegistro" type="email" placeholder="Mail" name="mail" required
+                        th:value="${mail}"><br>
+                    <input class="formularioRegistro" type="tel" placeholder="Telefono capitan" name="telefono1"
+                        required th:value="${telefono1}"><br>
+                    <input class="formularioRegistro" type="tel" placeholder="Telefono co-capitan" name="telefono2"
+                        required th:value="${telefono2}"><br>
+                    <input class="formularioRegistro" type="password" placeholder="Contraseña" name="clave1" required
+                        th:value="${clave1}"><br>
+                    <input class="formularioRegistro" type="password" placeholder="Repetir contraseña" name="clave2"
+                        required th:value="${clave2}"><br>
+                    <input class="formularioRegistro" type="text" name="descripcion"
+                        placeholder="Breve descripcion del equipo" th:value="${descripcion}"><br>
+            </div>
+            <div class="formulario1">
+                <select class="formularioRegistro" name="turno" id="turno">
+                    <option value="MANANA">MAÑANA</option>
+                    <option value="TARDE">TARDE</option>
+                    <option value="NOCHE">NOCHE</option>
+                </select><br>
+                <select class="formularioRegistro" name="zona" id="zona">
+                    <option value="CAPITAL"> CAPITAL</option>
+                    <option value="GODOY_CRUZ"> GODOY CRUZ</option>
+                    <option value="GUAYMALLEN"> GUAYMALLEN</option>
+                    <option value="LAS_HERAS"> LAS HERAS</option>
+                    <option value="LUJAN_DE_CUYO"> LUJAN DE CUYO</option>
+                    <option value="MAIPU">MAIPU</option>
+                </select><br>
+                <select class="formularioRegistro" name="dia" id="dia">
+                    <option value="LUNES"> LUNES</option>
+                    <option value="MARTES"> MARTES</option>
+                    <option value="MIERCOLES"> MIERCOLES</option>
+                    <option value="JUEVES"> JUEVES</option>
+                    <option value="VIERNES"> VIERNES</option>
+                    <option value="SABADO"> SABADO</option>
+                    <option value="DOMINGO"> DOMINGO</option>
+                </select><br>
+                <select class="formularioRegistro" name="tipo" id="tipo">
+                    <option value="MASCULINO"> MASCULINO</option>
+                    <option value="FEMENINO"> FEMENINO</option>
+                    <option value="MIXTO"> MIXTO</option>
+                </select><br>
+                <select class="formularioRegistro" name="categoria" id="categoria">
+                    <option value="JUVENIL"> JUVENIL</option>
+                    <option value="INTERMEDIO"> INTERMEDIO</option>
+                    <option value="SENIOR"> SENIOR</option>
+                </select><br>
+                <select class="formularioRegistro" name="cantidadJugadores" id="cantidadJugadores">
+                    <option value="CINCO">5</option>
+                    <option value="SIETE">7</option>
+                    <option value="ONCE">11</option>
+                </select><br>
+                <input class="formularioRegistro1" type="file" name="archivo" size="30"><br>
+                <input class="formularioRegistro2" type="submit">
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <p> Copyright © 2020 - Tu Equipo </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

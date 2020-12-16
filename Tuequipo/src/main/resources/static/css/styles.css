@@ -1,0 +1,4976 @@
+/* GENERAL */
+
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.containermain{
+    background-image: url(../img/fondo.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: right bottom;
+}
+
+header{
+    height: 100px;
+    top: 0;
+    background-color: rgba(0, 0 , 0, 0.3);
+    width: 100%;
+    opacity: 1;
+    position: fixed;
+}
+
+header h1 {
+    text-align: left;
+    float: left;
+    margin-left: 5px;
+    line-height: 50px;
+}
+
+.titulo{
+    font-size: 1em;
+    color: white;
+    float: left;
+    height: 100px;
+    line-height: 100px;
+    margin-left: 1em;
+    text-align: center;
+}
+
+nav div ul li{
+    list-style: none;
+    float: right;
+}
+
+.listanav{
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    height: 100px;
+    line-height: 100px;
+    margin-right: 2em;
+}
+
+.listanav1{
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    height: 100px;
+    line-height: 100px;
+    margin-right: 2em;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+
+}
+
+footer{
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 1;
+}
+
+div p{
+    font-size: 1em;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+/* INDEX */
+
+
+div h2{
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.botoninicio{
+    font-size: 2.7em;
+    color: white;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0.8;
+    border: 5px solid #EE8908;
+    background-color: #EE8908;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.botoninicio:hover{opacity: 1;}
+
+
+/* REGISTRO */
+
+
+.tituloRegistro{
+    color: white;
+    font-size: 2.6em;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    left: 29%;
+    top: 16%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.formulario{
+    position: absolute;
+    left: 79%;
+    top: 33%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.formulario1{
+    position: absolute;
+    left: 79%;
+    top: 55%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.formularioRegistro{
+    font-size: 1em;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.formularioRegistro1{
+    color: white;
+    font-size: 1em;
+    border-radius: 5px;
+    margin: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.formularioRegistro2{
+    font: bold;
+    font-size: 1em;
+    border-radius: 5px;
+    margin: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.errorRegistro{
+    font-size: 10px;
+    width: 190px;
+    height: 30px;
+    line-height: 30px;
+    BORDER: 1px solid white;
+    background-color: white;
+    color: red;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    top: -16%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+/* INICIO SESION */
+
+
+.formularioLogin{
+    font-size: 22px;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 25%; 
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.formularioLogin1{
+    font-size: 22px;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    left: 500%;
+    top: 85%; 
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.formularioLogin2{
+    font-size: 22px;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    padding: 2px;
+    left: 50%;
+    top: 145%; 
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.formularioLogin3{
+    font-size: 22px;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    padding: 2px;
+    left: 50%;
+    top: 145%; 
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.recuperarContraseña{
+    display: none;
+    position: relative;
+    float: none;
+    margin-top: 0;
+}
+
+.contraseña{
+    margin-top: 3vh;
+    font-size: 15px;
+    position: relative;
+    float: none;
+    color: white;
+    font: bold;
+}
+
+.formularioLogin4{
+    position: relative;
+    float: none;
+    width: 100px;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+    left: 0;
+    top: 0;
+    transform: none;
+}
+
+
+/* REGISTRO EXITOSO */
+
+
+.registroExitoso{
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+/* PERFIL */
+
+.listaPerfil{
+    margin: auto;
+    padding: 0;
+    width: 500px;
+    height: auto;
+    margin-right: 15px;
+    list-style: none;
+    background-color: #f4f4f4;
+    visibility: hidden;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    float: right;
+}
+
+.tituloPerfil{
+    position: relative;
+    float: right;
+    width: 20%;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    height: 100px;
+    line-height: 100px;
+    margin-right: 2em;
+}
+
+.infoPerfil{
+    font-size: 0.6em;
+    color: black;
+    margin: 0;
+    margin-top: 1vh;
+    position: relative;
+    float: left;
+    height: 10px;
+    width: 100%;
+    display: block;
+}
+
+li:hover > .listaPerfil{
+
+    color: white;
+    opacity: 1;
+    visibility: visible;
+}
+
+.cajaPerfil {
+    width: 48%;
+    height: 100px;
+    float: right;
+}
+
+.cajaPerfil1 {
+    width: 48%;
+    height: 100px;
+    float: left;
+}
+
+.cajaPerfil2 {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.cajaPerfil3 {
+    width: 100%;
+    position: relative;
+    float: left;
+    height: auto;
+}
+
+.cajaPerfil4 {
+    width: 100%;
+    position: relative;
+    float: left;
+    height: auto;
+}
+
+.cajaPerfil5 {
+    width: 100%;
+    position: relative;
+    float: left;
+    height: auto;
+}
+
+li.fotoPerfil {
+    width: 100%;
+    height: 100%;
+}
+
+img.fotoPefil {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.infoPerfil {
+    font-size: 0.8em;
+    color: black;
+    margin-left: 10px;
+    position: relative;
+    float: left;
+    height: 10px;
+    text-align: left;
+    width: 100%;
+    display: block;
+}
+
+p.cambiar1 {
+    color: black;
+    position: relative;
+    float: left;
+    font-size: 0.6em;
+    text-align: left;
+    margin-left: 5px;
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+.cambiar2{
+    color: black;
+    position: relative;
+    float: left;
+    font-size: 0.6em;
+    text-align: left;
+    margin-left: 5px;
+    width: 100%;
+}
+
+button.cambiarBoton {
+    position: relative;
+    float: left;
+    font-weight: 500;
+    margin: 5px;
+    margin-top: 7px;
+}
+
+li.modificarPerfil{
+    position: relative;
+    float: left;
+    width: 100%;
+    font-weight: 600;
+    text-align: left;
+    margin: 5px;
+}
+
+a.modificarPerfil1 {
+    color: black;
+}
+
+form.eliminarEquipo{
+    color: black;
+    position: relative;
+    float: left;
+    width: 100%;
+    font-weight: 600;
+    text-align: left;
+    margin: 5px;
+}
+
+button.eliminarEquipo1{
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+li.botonSalir{
+    position: relative;
+    float: left;
+    width: 100%;
+    font-weight: 600;
+    text-align: left;
+    margin: 5px;
+}
+
+a.botonSalir1{
+    color: black;
+}
+
+
+/* MODIFICAR PERFIL */
+
+
+.titulo1{
+    font-size: 1em;
+    color: white;
+    float: left;
+    height: 100px;
+    line-height: 100px;
+    margin-left: 1em;
+    text-align: center;
+}
+
+.lupa{
+    font-size: 1em;
+    color: white;
+    float: left;
+    height: 100px;
+    line-height: 100px;
+    margin-left: 1em;
+    text-align: center;
+}
+
+.listanav2{
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    height: 100px;
+    line-height: 100px;
+    margin-right: 2em;
+}
+
+
+.formulario2{
+    position: relative;
+    float: none;
+    margin-top: 20vh;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transform: none;
+}
+
+.formularioRegistro5{
+    color: white;
+    font-size: 0.5em;
+    position: relative;
+    float: none;
+    width: 20%; 
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    transform: none;
+}
+
+.formularioRegistro3{
+    font-size: 0.5em;
+    position: relative;
+    float: none;
+    width: 20%;
+    margin-top: 1vh;
+    top: 0;
+    left: 0;
+    transform: none;
+}
+
+.formularioRegistro4{
+    font-size: 0.5em;
+    position: relative;
+    float: none;
+    width: 15%;
+    margin-left: 1vh;
+    margin-top: 2px;
+    top: 0;
+    left: 0;
+    transform: none;
+}
+
+.exito{
+    font-size: 1em;
+    color: white;
+    font-weight: 700;
+}
+
+
+/* BUSCADOR */
+
+
+article{
+    height: 430px;
+    width: 500px;
+    float: left;
+    position: relative;
+    margin-left: 2px;
+    margin-top: 15vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+aside{
+    height: auto;
+    width: 400px;
+    float: right;
+    color: white;
+    font: blood;
+    position: relative;
+    margin-right: 10px;
+    margin-top: 15vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.p{
+    color: orange;
+    line-height: 50px;
+    text-align: left;
+} 
+
+header h1{
+    text-align: left;
+    float: left;
+    margin-left: 40px;
+    line-height: 100px;
+} 
+
+.tablas{
+    height: 430px;
+    width: 100%;
+    float: left;
+    overflow: scroll;
+}
+
+.numeroTel{
+    color: white
+}
+
+.filtros{
+    width: 100%;
+    float: left;
+    color: white;
+}
+.filtros h3{
+    text-align: left;
+}
+.filtros-izq{
+    width: 50%;
+    float: left;
+}
+.filtros-der{
+    width: 50%;
+    float: left;
+}
+.table, td, th {  
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.filtros table {
+        border-collapse: collapse;
+        width: auto;
+}
+.th, td {
+        padding: 10px;
+        text-align: left;
+}
+
+
+/* ------------------------ MEDIAS ------------------------ */
+
+
+/* VISTA LOCALHOST */
+
+@media (max-width: 800px){ 
+
+
+    /* GENERAL */
+
+    
+    main{
+        margin-bottom: 58px;
+        min-width: 100px;
+        max-width: auto;
+    }
+    
+    header{
+        position: relative;
+        float: left;
+        height: 50px;
+    }
+
+    header h1 {
+        text-align: left;
+        float: left;
+        margin-left: -25px;
+    }
+
+    nav div{
+        position: relative;
+        float: right;
+        width: 65%;
+    }
+
+    .containermain{
+        height: auto;
+        min-height: 100vh;
+        max-width: 100vw;
+        overflow: hidden;
+    }
+    
+    .titulo{
+        width: 100px;
+        position: relative;
+        float: left;
+        font-size: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .listanav{
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+        margin: 0.5em;
+    }
+
+    .listanav1{
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+        margin: 0.5em;
+    }
+
+
+    /* INDEX */
+    
+
+    div{
+        width: 100%;
+        position: relative;
+        float: left;
+        text-align: center;
+    }
+    div h2{
+        font-size: 2em;
+        position: relative;
+        float: none;
+        width: 100%;
+        margin: 2px;
+        margin-top: 25vh;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+    
+    .botoninicio{
+        font-size: 1.7em;
+        padding: 1px;
+        margin-top: 0vh;
+        float: none;
+        width: 250px;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+
+    /* REGISTRO */
+
+
+    .tituloRegistro{
+        font-size: 2.6em;
+        margin-top: 10vh;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+    
+    .formulario, .formulario1{
+        position: relative;
+        float: none;
+        margin-top: 1vh;
+        width: 60%;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin: 0 auto;
+    }
+
+    .formularioRegistro, .formularioRegistro1{
+        font-size: 1em;
+        position: relative;
+        float: none;
+        width: 60%;
+        margin-left: 1vh;
+        margin: 7px 0;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .formularioRegistro2{
+        font-size: 1em;
+        position: relative;
+        float: none;
+        width: 30%;
+        margin-left: 1vh;
+        margin-top: 2px;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+    
+    .errorRegistro{
+        font-size: 10px;
+        float: none;
+        margin-top: 7vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3vh;
+        width: 200px;
+        height: 30px;
+        line-height: 30px;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+
+    /* INICIAR SESION */
+
+
+    .formularioLogin{
+        font-size: 1em;
+        position: relative;
+        float: left;
+        margin-top: 40px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: none;     
+        height: auto;
+    }
+
+    .formularioLogin1{
+        font-size: 15px;
+        left: 50%;
+        top: 50%; 
+    }
+
+    .formularioLogin2{
+        font-size: 15px;
+        left: 50%;
+        top: 120%; 
+    }
+
+    .formularioLogin3{
+        font-size: 15px;
+        left: 50%;
+        top: 145%; 
+    }
+    .formularioLogin1,.formularioLogin2{
+        position: relative;
+        float: none;
+        width: 250px;
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+    .formularioLogin3{
+        position: relative;
+        float: none;
+        width: 80px;
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+    .recuperarContraseña{
+        display: none;
+        position: relative;
+        float: none;
+        margin-top: 0;
+    }
+
+    .contraseña{
+        margin-top: 3vh;
+        font-size: 15px;
+        position: relative;
+        float: none;
+        color: white;
+        font: bold;
+    }
+
+    .formularioLogin4{
+        position: relative;
+        float: none;
+        width: 100px;
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+
+    /* REGISTRO EXITOSO */
+
+
+    .registroExitoso{
+        font-size: 3em;
+        width: 100%;
+        float: none;
+        text-align: center;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin-top: 35vh;
+    }
+
+
+    /* PERFIL */
+
+
+    .listaPerfil{
+        margin: auto;
+        padding: 0;
+        width: 155px;
+        height: auto;
+        list-style: none;
+        background-color: #f4f4f4;
+        visibility: hidden;
+        z-index: 1;
+        transition: all 0.2s ease-in-out;
+        position: relative;
+        float: right;
+    }
+
+    .tituloPerfil{
+        position: relative;
+        float: right;
+        color: white;
+        font-size: 1em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .cajaPerfil {
+        width: 48%;
+        height: 100px;
+        float: right;
+    }
+
+    .cajaPerfil1 {
+        width: 48%;
+        height: 100px;
+        float: left;
+    }
+
+    .cajaPerfil2 {
+        width: 100%;
+        height: auto;
+        float: left;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .cajaPerfil3 {
+        width: 100%;
+        position: relative;
+        float: left;
+        height: auto;
+    }
+
+    .cajaPerfil4 {
+        width: 100%;
+        position: relative;
+        float: left;
+        height: auto;
+    }
+
+    .cajaPerfil5 {
+        width: 100%;
+        position: relative;
+        float: left;
+        height: auto;
+    }
+
+    li.fotoPerfil {
+        width: 100%;
+        height: 100%;
+    }
+
+    img.fotoPefil {
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .infoPerfil {
+        font-size: 0.8em;
+        color: black;
+        margin-left: 10px;
+        position: relative;
+        float: left;
+        height: 10px;
+        text-align: left;
+        width: 100%;
+        display: block;
+    }
+
+    p.cambiar1 {
+        color: black;
+        position: relative;
+        float: left;
+        font-size: 0.6em;
+        text-align: left;
+        margin-left: 5px;
+        width: 100%;
+        margin-bottom: -10px;
+    }
+
+    .cambiar2{
+        color: black;
+        position: relative;
+        float: left;
+        font-size: 0.6em;
+        text-align: left;
+        margin-left: 5px;
+        width: 100%;
+    }
+
+    button.cambiarBoton {
+        position: relative;
+        float: left;
+        font-weight: 500;
+        margin: 5px;
+        margin-top: 7px;
+    }
+
+    li.modificarPerfil{
+        position: relative;
+        float: left;
+        width: 100%;
+        font-weight: 600;
+        text-align: left;
+        margin: 5px;
+    }
+
+    a.modificarPerfil1 {
+        color: black;
+    }
+
+    form.eliminarEquipo{
+        color: black;
+        position: relative;
+        float: left;
+        width: 100%;
+        font-weight: 600;
+        text-align: left;
+        margin: 5px;
+    }
+
+    button.eliminarEquipo1{
+        border: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+    }
+
+    li.botonSalir{
+        position: relative;
+        float: left;
+        width: 100%;
+        font-weight: 600;
+        text-align: left;
+        margin: 5px;
+    }
+
+    a.botonSalir1{
+        color: black;
+    }
+
+
+    /* MODIFICAR PERFIL */
+
+
+    .navPerfil{
+        position: relative;
+        float: right;
+        width: 30%;
+    }
+
+    .titulo1{
+        width: 50px;
+        margin-left: 20px;
+        position: relative;
+        float: left;
+        font-size: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .lupa{
+        width: 110px;
+        margin-left: 0;
+        position: relative;
+        float: left;
+        font-size: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .listanav2{
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+        margin: 0.5em;
+    }
+
+    .formulario2{
+        position: relative;
+        float: none;
+        margin-top: 20vh;
+        text-align: center;
+        width: 100%;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+    .formularioRegistro5{
+        font-size: 0.8em;
+        position: relative;
+        float: none;
+        width: 40%; 
+        margin-top: 0;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .formularioRegistro3{
+        font-size: 0.8em;
+        position: relative;
+        float: none;
+        width: 40%;
+        margin-top: 1vh;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .formularioRegistro4{
+        font-size: 0.8em;
+        position: relative;
+        float: none;
+        width: 30%;
+        margin-left: 1vh;
+        margin-top: 2px;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .exito{
+        font-size: 1em;
+        color: white;
+        font-weight: 700;
+    }
+
+
+    /* BUSCADOR */
+
+
+    article{
+        height: 50%;
+        width: 98%;
+        float: left;
+        position: relative;
+        margin-top: 5vh;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    aside{
+        height: 50%;
+        width: 98%;
+        color: white;
+        font: bold;
+        position: relative;
+        margin-top: 5vh;
+        margin-bottom: 15vh;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    .p{
+        color: orange;
+        line-height: 50px;
+        text-align: left;
+    } 
+
+    .tablas{    
+        height: 300px;
+        width: 100%;
+        float: left;
+        overflow: scroll;
+        margin-bottom: 2vh;
+    }
+    
+    .filtros{
+        width: 100%;
+        position: relative;
+        float: left;
+        color: white;
+    }
+
+    .filtros-izq{
+        font-size: 10px;
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+    .filtros-der{
+        font-size: 10px;
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+
+    .table{
+        position: relative;
+        float: none;
+        width: 98%;
+    }
+
+    td, th {  
+        font-size: 0.6em;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+
+    .equipo{
+        font-size: 0.6em;
+        color: white;
+        height: 5px;
+        width: 24%;
+        padding: auto;
+        margin: auto;
+    }
+
+    .th, td {
+            padding: 10px;
+            text-align: center;
+    }
+    
+}
+
+
+/* PANTALLAS PC */
+
+
+@media (min-width: 801px) and (max-width: 1025px){
+
+
+    /* GENERAL */
+
+
+    main{
+        margin-bottom: 58px;
+    }
+    
+    header{
+        position: relative;
+        float: left;
+        height: 50px;
+    }
+
+    header h1 {
+        text-align: left;
+        float: left;
+        margin-left: -25px;
+    }
+
+    nav div{
+        position: relative;
+        float: right;
+        width: 65%;
+    }
+
+    .containermain{
+        height: auto;
+        min-height: 100vh;
+        max-width: 100vw;
+        overflow: hidden;
+    }
+    
+    .titulo{
+        width: 100px;
+        position: relative;
+        float: left;
+        font-size: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .listanav{
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+        margin: 0.5em;
+    }
+
+    .listanav1{
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+        margin: 0.5em;
+    }
+
+
+    /* INDEX */
+    
+
+    div{
+        width: 100%;
+        position: relative;
+        float: left;
+        text-align: center;
+    }
+    div h2{
+        font-size: 2em;
+        position: relative;
+        float: none;
+        width: 100%;
+        margin: 2px;
+        margin-top: 25vh;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+    
+    .botoninicio{
+        font-size: 1.7em;
+        padding: 1px;
+        margin-top: 0vh;
+        float: none;
+        width: 250px;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+
+    /* REGISTRO */
+
+
+    .tituloRegistro{
+        font-size: 2.6em;
+        margin-top: 10vh;
+        margin-bottom: 3vh;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+    
+    .formulario{
+        position: relative;
+        float: left;
+        margin-top: 10vh;
+        margin-right: 5vh;
+        text-align: right;
+        width: 48%;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin: 0 auto;
+    }
+    
+    .formulario1{
+        position: relative;
+        float: right;
+        text-align: left;
+        margin-top: 10vh;
+        margin-left: 5vh;
+        width: 48%;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin: 0 auto;
+    }
+
+    .formularioRegistro, .formularioRegistro1{
+        font-size: 1em;
+        position: relative;
+        float: none;
+        width: 48%;
+        margin-left: 1vh;
+        margin: 7px 0;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .formularioRegistro2{
+        font-size: 1em;
+        position: relative;
+        float: none;
+        width: 30%;
+        margin-left: 1vh;
+        margin-top: 2px;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+    
+    .error{
+        width: 100%;
+        height: auto;
+        position: relative;
+        float: none;
+        text-align: center;
+    }
+
+    .errorRegistro{
+        font-size: 10px;
+        float: none;
+        margin-top: 7vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3vh;
+        width: 200px;
+        height: 30px;
+        line-height: 30px;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+
+    /* INICIAR SESION */
+
+
+    .formularioLogin{
+        font-size: 1em;
+        position: relative;
+        float: left;
+        margin-top: 40px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: none;     
+        height: auto;
+    }
+
+    .formularioLogin1{
+        font-size: 15px;
+        left: 50%;
+        top: 50%; 
+    }
+
+    .formularioLogin2{
+        font-size: 15px;
+        left: 50%;
+        top: 120%; 
+    }
+
+    .formularioLogin3{
+        font-size: 15px;
+        left: 50%;
+        top: 145%; 
+    }
+    .formularioLogin1,.formularioLogin2{
+        position: relative;
+        float: none;
+        width: 250px;
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+    .formularioLogin3{
+        position: relative;
+        float: none;
+        width: 80px;
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+    .recuperarContraseña{
+        display: none;
+        position: relative;
+        float: none;
+        margin-top: 0;
+    }
+
+    .contraseña{
+        margin-top: 3vh;
+        font-size: 15px;
+        position: relative;
+        float: none;
+        color: white;
+        font: bold;
+    }
+
+    .formularioLogin4{
+        position: relative;
+        float: none;
+        width: 100px;
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+
+    /* REGISTRO EXITOSO */
+
+
+    .registroExitoso{
+        font-size: 3em;
+        width: 100%;
+        float: none;
+        text-align: center;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin-top: 35vh;
+    }
+
+
+    /* PERFIL */
+
+
+    .listaPerfil{
+        margin: auto;
+        padding: 0;
+        width: 155px;
+        height: auto;
+        list-style: none;
+        background-color: #f4f4f4;
+        visibility: hidden;
+        z-index: 1;
+        transition: all 0.2s ease-in-out;
+        position: relative;
+        float: right;
+    }
+
+    .tituloPerfil{
+        position: relative;
+        float: right;
+        color: white;
+        font-size: 1em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .cajaPerfil {
+        width: 48%;
+        height: 100px;
+        float: right;
+    }
+
+    .cajaPerfil1 {
+        width: 48%;
+        height: 100px;
+        float: left;
+    }
+
+    .cajaPerfil2 {
+        width: 100%;
+        height: auto;
+        float: left;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .cajaPerfil3 {
+        width: 100%;
+        position: relative;
+        float: left;
+        height: auto;
+    }
+
+    .cajaPerfil4 {
+        width: 100%;
+        position: relative;
+        float: left;
+        height: auto;
+    }
+
+    .cajaPerfil5 {
+        width: 100%;
+        position: relative;
+        float: left;
+        height: auto;
+    }
+
+    li.fotoPerfil {
+        width: 100%;
+        height: 100%;
+    }
+
+    img.fotoPefil {
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .infoPerfil {
+        font-size: 0.8em;
+        color: black;
+        margin-left: 10px;
+        position: relative;
+        float: left;
+        height: 10px;
+        text-align: left;
+        width: 100%;
+        display: block;
+    }
+
+    p.cambiar1 {
+        color: black;
+        position: relative;
+        float: left;
+        font-size: 0.6em;
+        text-align: left;
+        margin-left: 5px;
+        width: 100%;
+        margin-bottom: -10px;
+    }
+
+    .cambiar2{
+        color: black;
+        position: relative;
+        float: left;
+        font-size: 0.6em;
+        text-align: left;
+        margin-left: 5px;
+        width: 100%;
+    }
+
+    button.cambiarBoton {
+        position: relative;
+        float: left;
+        font-weight: 500;
+        margin: 5px;
+        margin-top: 7px;
+    }
+
+    li.modificarPerfil{
+        position: relative;
+        float: left;
+        width: 100%;
+        font-weight: 600;
+        text-align: left;
+        margin: 5px;
+    }
+
+    a.modificarPerfil1 {
+        color: black;
+    }
+
+    form.eliminarEquipo{
+        color: black;
+        position: relative;
+        float: left;
+        width: 100%;
+        font-weight: 600;
+        text-align: left;
+        margin: 5px;
+    }
+
+    button.eliminarEquipo1{
+        border: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+    }
+
+    li.botonSalir{
+        position: relative;
+        float: left;
+        width: 100%;
+        font-weight: 600;
+        text-align: left;
+        margin: 5px;
+    }
+
+    a.botonSalir1{
+        color: black;
+    }
+
+
+    /* MODIFICAR PERFIL */
+
+
+    .navPerfil{
+        position: relative;
+        float: right;
+        width: 30%;
+    }
+
+    .titulo1{
+        width: 50px;
+        margin-left: 20px;
+        position: relative;
+        float: left;
+        font-size: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .lupa{
+        width: 110px;
+        margin-left: 0;
+        position: relative;
+        float: left;
+        font-size: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .listanav2{
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+        margin: 0.5em;
+    }
+
+    .formulario2{
+        position: relative;
+        float: none;
+        margin-top: 20vh;
+        text-align: center;
+        width: 100%;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+    .formularioRegistro5{
+        font-size: 0.8em;
+        position: relative;
+        float: none;
+        width: 40%; 
+        margin-top: 0;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .formularioRegistro3{
+        font-size: 0.8em;
+        position: relative;
+        float: none;
+        width: 40%;
+        margin-top: 1vh;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .formularioRegistro4{
+        font-size: 0.8em;
+        position: relative;
+        float: none;
+        width: 30%;
+        margin-left: 1vh;
+        margin-top: 2px;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+    
+    .exito{
+        font-size: 1em;
+        color: white;
+        font-weight: 700;
+    }
+
+
+    /* BUSCADOR */
+
+
+    article{
+        height: 50%;
+        width: 36%;
+        margin-left: 60px;
+        float: left;
+        position: relative;
+        margin-top: 5vh;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    aside{
+        height: 50%;
+        width: 48%;
+        color: white;
+        font: bold;
+        position: relative;
+        margin-top: 5vh;
+        margin-bottom: 15vh;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    .p{
+        color: orange;
+        line-height: 50px;
+        text-align: left;
+    } 
+
+    .tablas{    
+        height: 300px;
+        width: 100%;
+        float: left;
+        overflow: scroll;
+        margin-bottom: 2vh;
+    }
+    
+    .filtros{
+        width: 100%;
+        position: relative;
+        float: left;
+        color: white;
+    }
+
+    .filtros-izq{
+        font-size: 10px;
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+    .filtros-der{
+        font-size: 10px;
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+
+    .table{
+        position: relative;
+        float: none;
+        width: 98%;
+    }
+
+    td, th {  
+        font-size: 0.6em;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+
+    .equipo{
+        font-size: 0.6em;
+        color: white;
+        height: 5px;
+        width: 24%;
+        padding: auto;
+        margin: auto;
+    }
+
+    .th, td {
+            padding: 10px;
+            text-align: center;
+    }
+}
+
+
+@media (min-width: 1026px) and (max-width: 1281px){
+
+
+    /* GENERAL */
+
+
+    main{
+        margin-bottom: 58px;
+    }
+    
+    header{
+        position: relative;
+        float: left;
+        height: 50px;
+    }
+
+    header h1 {
+        text-align: left;
+        float: left;
+        margin-left: -25px;
+    }
+
+    nav div{
+        position: relative;
+        float: right;
+        width: 65%;
+    }
+
+    .containermain{
+        height: auto;
+        min-height: 100vh;
+        max-width: 100vw;
+        overflow: hidden;
+    }
+    
+    .titulo{
+        width: 100px;
+        position: relative;
+        float: left;
+        font-size: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .listanav{
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+        margin: 0.5em;
+    }
+
+    .listanav1{
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+        margin: 0.5em;
+    }
+
+
+    /* INDEX */
+    
+
+    div{
+        width: 100%;
+        position: relative;
+        float: left;
+        text-align: center;
+    }
+    div h2{
+        font-size: 2em;
+        position: relative;
+        float: none;
+        width: 100%;
+        margin: 2px;
+        margin-top: 25vh;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+    
+    .botoninicio{
+        font-size: 1.7em;
+        padding: 1px;
+        margin-top: 0vh;
+        float: none;
+        width: 250px;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+
+    /* REGISTRO */
+
+
+    .tituloRegistro{
+        font-size: 2.6em;
+        margin-top: 10vh;
+        margin-bottom: 3vh;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+    
+    .formulario{
+        position: relative;
+        float: left;
+        margin-top: 10vh;
+        margin-right: 5vh;
+        text-align: right;
+        width: 48%;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin: 0 auto;
+    }
+    
+    .formulario1{
+        position: relative;
+        float: right;
+        text-align: left;
+        margin-top: 10vh;
+        margin-left: 5vh;
+        width: 48%;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin: 0 auto;
+    }
+
+    .formularioRegistro, .formularioRegistro1{
+        font-size: 1em;
+        position: relative;
+        float: none;
+        width: 48%;
+        margin-left: 1vh;
+        margin: 7px 0;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .formularioRegistro2{
+        font-size: 1em;
+        position: relative;
+        float: none;
+        width: 30%;
+        margin-left: 1vh;
+        margin-top: 2px;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+    
+    .error{
+        width: 100%;
+        height: auto;
+        position: relative;
+        float: none;
+        text-align: center;
+    }
+
+    .errorRegistro{
+        font-size: 10px;
+        float: none;
+        margin-top: 7vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3vh;
+        width: 200px;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+
+    /* INICIAR SESION */
+
+
+    .formularioLogin{
+        font-size: 1em;
+        position: relative;
+        float: left;
+        margin-top: 40px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: none;     
+        height: auto;
+    }
+
+    .formularioLogin1{
+        font-size: 15px;
+        left: 50%;
+        top: 50%; 
+    }
+
+    .formularioLogin2{
+        font-size: 15px;
+        left: 50%;
+        top: 120%; 
+    }
+
+    .formularioLogin3{
+        font-size: 15px;
+        left: 50%;
+        top: 145%; 
+    }
+    .formularioLogin1,.formularioLogin2{
+        position: relative;
+        float: none;
+        width: 250px;
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+    .formularioLogin3{
+        position: relative;
+        float: none;
+        width: 80px;
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+    .recuperarContraseña{
+        display: none;
+        position: relative;
+        float: none;
+        margin-top: 0;
+    }
+
+    .contraseña{
+        margin-top: 3vh;
+        font-size: 15px;
+        position: relative;
+        float: none;
+        color: white;
+        font: bold;
+    }
+
+    .formularioLogin4{
+        position: relative;
+        float: none;
+        width: 100px;
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+
+    /* REGISTRO EXITOSO */
+
+
+    .registroExitoso{
+        font-size: 3em;
+        width: 100%;
+        float: none;
+        text-align: center;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin-top: 35vh;
+    }
+
+
+    /* PERFIL */
+
+
+    .listaPerfil{
+        margin: auto;
+        padding: 0;
+        width: 155px;
+        height: auto;
+        list-style: none;
+        background-color: #f4f4f4;
+        visibility: hidden;
+        z-index: 1;
+        transition: all 0.2s ease-in-out;
+        position: relative;
+        float: right;
+    }
+
+    .tituloPerfil{
+        position: relative;
+        float: right;
+        color: white;
+        font-size: 1em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .cajaPerfil {
+        width: 48%;
+        height: 100px;
+        float: right;
+    }
+
+    .cajaPerfil1 {
+        width: 48%;
+        height: 100px;
+        float: left;
+    }
+
+    .cajaPerfil2 {
+        width: 100%;
+        height: auto;
+        float: left;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .cajaPerfil3 {
+        width: 100%;
+        position: relative;
+        float: left;
+        height: auto;
+    }
+
+    .cajaPerfil4 {
+        width: 100%;
+        position: relative;
+        float: left;
+        height: auto;
+    }
+
+    .cajaPerfil5 {
+        width: 100%;
+        position: relative;
+        float: left;
+        height: auto;
+    }
+
+    li.fotoPerfil {
+        width: 100%;
+        height: 100%;
+    }
+
+    img.fotoPefil {
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .infoPerfil {
+        font-size: 0.8em;
+        color: black;
+        margin-left: 10px;
+        position: relative;
+        float: left;
+        height: 10px;
+        text-align: left;
+        width: 100%;
+        display: block;
+    }
+
+    p.cambiar1 {
+        color: black;
+        position: relative;
+        float: left;
+        font-size: 0.6em;
+        text-align: left;
+        margin-left: 5px;
+        width: 100%;
+        margin-bottom: -10px;
+    }
+
+    .cambiar2{
+        color: black;
+        position: relative;
+        float: left;
+        font-size: 0.6em;
+        text-align: left;
+        margin-left: 5px;
+        width: 100%;
+    }
+
+    button.cambiarBoton {
+        position: relative;
+        float: left;
+        font-weight: 500;
+        margin: 5px;
+        margin-top: 7px;
+    }
+
+    li.modificarPerfil{
+        position: relative;
+        float: left;
+        width: 100%;
+        font-weight: 600;
+        text-align: left;
+        margin: 5px;
+    }
+
+    a.modificarPerfil1 {
+        color: black;
+    }
+
+    form.eliminarEquipo{
+        color: black;
+        position: relative;
+        float: left;
+        width: 100%;
+        font-weight: 600;
+        text-align: left;
+        margin: 5px;
+    }
+
+    button.eliminarEquipo1{
+        border: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+    }
+
+    li.botonSalir{
+        position: relative;
+        float: left;
+        width: 100%;
+        font-weight: 600;
+        text-align: left;
+        margin: 5px;
+    }
+
+    a.botonSalir1{
+        color: black;
+    }
+
+
+    /* MODIFICAR PERFIL */
+
+
+    .navPerfil{
+        position: relative;
+        float: right;
+        width: 30%;
+    }
+
+    .titulo1{
+        width: 50px;
+        margin-left: 20px;
+        position: relative;
+        float: left;
+        font-size: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .lupa{
+        width: 110px;
+        margin-left: 0;
+        position: relative;
+        float: left;
+        font-size: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .listanav2{
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+        margin: 0.5em;
+    }
+
+    .formulario2{
+        position: relative;
+        float: none;
+        margin-top: 20vh;
+        text-align: center;
+        width: 100%;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+    .formularioRegistro5{
+        font-size: 0.8em;
+        position: relative;
+        float: none;
+        width: 30%; 
+        margin-top: 0;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .formularioRegistro3{
+        font-size: 0.8em;
+        position: relative;
+        float: none;
+        width: 30%;
+        margin-top: 1vh;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .formularioRegistro4{
+        font-size: 0.8em;
+        position: relative;
+        float: none;
+        width: 15%;
+        margin-left: 1vh;
+        margin-top: 2px;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+    
+    .exito{
+        font-size: 1em;
+        color: white;
+        font-weight: 700;
+    }
+
+
+    /* BUSCADOR */
+
+
+    article{
+        height: 50%;
+        width: 36%;
+        margin-left: 60px;
+        float: left;
+        position: relative;
+        margin-top: 5vh;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    aside{
+        height: 50%;
+        width: 48%;
+        color: white;
+        font: bold;
+        position: relative;
+        margin-top: 5vh;
+        margin-bottom: 15vh;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    .p{
+        color: orange;
+        line-height: 50px;
+        text-align: left;
+    } 
+
+    .tablas{    
+        height: 300px;
+        width: 100%;
+        float: left;
+        overflow: scroll;
+        margin-bottom: 2vh;
+    }
+    
+    .filtros{
+        width: 100%;
+        position: relative;
+        float: left;
+        color: white;
+    }
+
+    .filtros-izq{
+        font-size: 10px;
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+    .filtros-der{
+        font-size: 10px;
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+
+    .table{
+        position: relative;
+        float: none;
+        width: 98%;
+    }
+
+    td, th {  
+        font-size: 0.6em;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+
+    .equipo{
+        font-size: 0.6em;
+        color: white;
+        height: 5px;
+        width: 24%;
+        padding: auto;
+        margin: auto;
+    }
+
+    .th, td {
+            padding: 10px;
+            text-align: center;
+    }
+}
+
+
+@media (min-width: 1282px) and (max-width: 1601px){
+
+
+    /* GENERAL */
+
+
+    main{
+        margin-bottom: 58px;
+    }
+    
+    header{
+        position: relative;
+        float: left;
+        height: 50px;
+    }
+
+    header h1 {
+        text-align: left;
+        float: left;
+        margin-left: -25px;
+    }
+
+    nav div{
+        position: relative;
+        float: right;
+        width: 65%;
+    }
+
+    .containermain{
+        height: auto;
+        min-height: 100vh;
+        max-width: 100vw;
+        overflow: hidden;
+    }
+    
+    .titulo{
+        width: 100px;
+        position: relative;
+        float: left;
+        font-size: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .listanav{
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+        margin: 0.5em;
+    }
+
+    .listanav1{
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+        margin: 0.5em;
+    }
+
+
+    /* INDEX */
+    
+
+    div{
+        width: 100%;
+        position: relative;
+        float: left;
+        text-align: center;
+    }
+    div h2{
+        font-size: 2em;
+        position: relative;
+        float: none;
+        width: 100%;
+        margin: 2px;
+        margin-top: 25vh;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+    
+    .botoninicio{
+        font-size: 1.7em;
+        padding: 1px;
+        margin-top: 0vh;
+        float: none;
+        width: 250px;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+
+    /* REGISTRO */
+
+
+    .tituloRegistro{
+        font-size: 2.6em;
+        margin-top: 10vh;
+        margin-bottom: 3vh;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+    
+    .formulario{
+        position: relative;
+        float: left;
+        margin-top: 10vh;
+        margin-right: 5vh;
+        text-align: right;
+        width: 48%;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin: 0 auto;
+    }
+    
+    .formulario1{
+        position: relative;
+        float: right;
+        text-align: left;
+        margin-top: 10vh;
+        margin-left: 5vh;
+        width: 48%;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin: 0 auto;
+    }
+
+    .formularioRegistro, .formularioRegistro1{
+        font-size: 1em;
+        position: relative;
+        float: none;
+        width: 60%;
+        margin: 7px 0;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .formularioRegistro2{
+        font-size: 1em;
+        position: relative;
+        float: none;
+        width: 30%;
+        margin-left: 1vh;
+        margin-top: 2px;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+    
+    .error{
+        width: 100%;
+        height: auto;
+        position: relative;
+        float: none;
+        text-align: center;
+    }
+
+    .errorRegistro{
+        font-size: 10px;
+        float: none;
+        margin-top: 7vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3vh;
+        width: 200px;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+
+    /* INICIAR SESION */
+
+
+    .formularioLogin{
+        font-size: 1em;
+        position: relative;
+        float: left;
+        margin-top: 40px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: none;     
+        height: auto;
+    }
+
+    .formularioLogin1{
+        font-size: 15px;
+        left: 50%;
+        top: 50%; 
+    }
+
+    .formularioLogin2{
+        font-size: 15px;
+        left: 50%;
+        top: 120%; 
+    }
+
+    .formularioLogin3{
+        font-size: 15px;
+        left: 50%;
+        top: 145%; 
+    }
+    .formularioLogin1,.formularioLogin2{
+        position: relative;
+        float: none;
+        width: 250px;
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+    .formularioLogin3{
+        position: relative;
+        float: none;
+        width: 80px;
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+    .recuperarContraseña{
+        display: none;
+        position: relative;
+        float: none;
+        margin-top: 0;
+    }
+
+    .contraseña{
+        margin-top: 3vh;
+        font-size: 15px;
+        position: relative;
+        float: none;
+        color: white;
+        font: bold;
+    }
+
+    .formularioLogin4{
+        position: relative;
+        float: none;
+        width: 100px;
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+
+    /* REGISTRO EXITOSO */
+
+
+    .registroExitoso{
+        font-size: 3em;
+        width: 100%;
+        float: none;
+        text-align: center;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin-top: 35vh;
+    }
+
+
+    /* PERFIL */
+
+
+    .listaPerfil{
+        margin: auto;
+        padding: 0;
+        width: 155px;
+        height: auto;
+        list-style: none;
+        background-color: #f4f4f4;
+        visibility: hidden;
+        z-index: 1;
+        transition: all 0.2s ease-in-out;
+        position: relative;
+        float: right;
+    }
+
+    .tituloPerfil{
+        position: relative;
+        float: right;
+        color: white;
+        font-size: 1em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .cajaPerfil {
+        width: 48%;
+        height: 100px;
+        float: right;
+    }
+
+    .cajaPerfil1 {
+        width: 48%;
+        height: 100px;
+        float: left;
+    }
+
+    .cajaPerfil2 {
+        width: 100%;
+        height: auto;
+        float: left;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .cajaPerfil3 {
+        width: 100%;
+        position: relative;
+        float: left;
+        height: auto;
+    }
+
+    .cajaPerfil4 {
+        width: 100%;
+        position: relative;
+        float: left;
+        height: auto;
+    }
+
+    .cajaPerfil5 {
+        width: 100%;
+        position: relative;
+        float: left;
+        height: auto;
+    }
+
+    li.fotoPerfil {
+        width: 100%;
+        height: 100%;
+    }
+
+    img.fotoPefil {
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .infoPerfil {
+        font-size: 0.8em;
+        color: black;
+        margin-left: 10px;
+        position: relative;
+        float: left;
+        height: 10px;
+        text-align: left;
+        width: 100%;
+        display: block;
+    }
+
+    p.cambiar1 {
+        color: black;
+        position: relative;
+        float: left;
+        font-size: 0.6em;
+        text-align: left;
+        margin-left: 5px;
+        width: 100%;
+        margin-bottom: -10px;
+    }
+
+    .cambiar2{
+        color: black;
+        position: relative;
+        float: left;
+        font-size: 0.6em;
+        text-align: left;
+        margin-left: 5px;
+        width: 100%;
+    }
+
+    button.cambiarBoton {
+        position: relative;
+        float: left;
+        font-weight: 500;
+        margin: 5px;
+        margin-top: 7px;
+    }
+
+    li.modificarPerfil{
+        position: relative;
+        float: left;
+        width: 100%;
+        font-weight: 600;
+        text-align: left;
+        margin: 5px;
+    }
+
+    a.modificarPerfil1 {
+        color: black;
+    }
+
+    form.eliminarEquipo{
+        color: black;
+        position: relative;
+        float: left;
+        width: 100%;
+        font-weight: 600;
+        text-align: left;
+        margin: 5px;
+    }
+
+    button.eliminarEquipo1{
+        border: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+    }
+
+    li.botonSalir{
+        position: relative;
+        float: left;
+        width: 100%;
+        font-weight: 600;
+        text-align: left;
+        margin: 5px;
+    }
+
+    a.botonSalir1{
+        color: black;
+    }
+
+
+    /* MODIFICAR PERFIL */
+
+
+    .navPerfil{
+        position: relative;
+        float: right;
+        width: 30%;
+    }
+
+    .titulo1{
+        width: 50px;
+        margin-left: 20px;
+        position: relative;
+        float: left;
+        font-size: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .lupa{
+        width: 110px;
+        margin-left: 0;
+        position: relative;
+        float: left;
+        font-size: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .listanav2{
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+        margin: 0.5em;
+    }
+
+    .formulario2{
+        position: relative;
+        float: none;
+        margin-top: 20vh;
+        text-align: center;
+        width: 100%;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+    .formularioRegistro5{
+        font-size: 0.8em;
+        position: relative;
+        float: none;
+        width: 20%; 
+        margin-top: 0;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .formularioRegistro3{
+        font-size: 0.8em;
+        position: relative;
+        float: none;
+        width: 20%;
+        margin-top: 1vh;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .formularioRegistro4{
+        font-size: 0.8em;
+        position: relative;
+        float: none;
+        width: 15%;
+        margin-left: 1vh;
+        margin-top: 2px;
+        top: 0;
+        left: 0;
+        transform: none;
+    } 
+
+    .exito{
+        font-size: 1em;
+        color: white;
+        font-weight: 700;
+    }
+
+
+    /* BUSCADOR */
+
+
+    article{
+        height: 50%;
+        width: 36%;
+        margin-left: 60px;
+        float: left;
+        position: relative;
+        margin-top: 5vh;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    aside{
+        height: 50%;
+        width: 48%;
+        color: white;
+        font: bold;
+        position: relative;
+        margin-top: 5vh;
+        margin-bottom: 15vh;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    .p{
+        color: orange;
+        line-height: 50px;
+        text-align: left;
+    } 
+
+    .tablas{    
+        height: 300px;
+        width: 100%;
+        float: left;
+        overflow: scroll;
+        margin-bottom: 2vh;
+    }
+    
+    .filtros{
+        width: 100%;
+        position: relative;
+        float: left;
+        color: white;
+    }
+
+    .filtros-izq{
+        font-size: 10px;
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+    .filtros-der{
+        font-size: 10px;
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+
+    .table{
+        position: relative;
+        float: none;
+        width: 98%;
+    }
+
+    td, th {  
+        font-size: 0.6em;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+
+    .equipo{
+        font-size: 0.6em;
+        color: white;
+        height: 5px;
+        width: 24%;
+        padding: auto;
+        margin: auto;
+    }
+
+    .th, td {
+            padding: 10px;
+            text-align: center;
+    }
+
+}
+
+
+@media (min-width: 1602px) and (max-width: 1921px){
+
+
+    /* GENERAL */
+
+
+    main{
+        margin-bottom: 58px;
+    }
+    
+    header{
+        position: relative;
+        float: left;
+        height: 50px;
+    }
+
+    header h1 {
+        text-align: left;
+        float: left;
+        margin-left: -25px;
+    }
+
+    nav div{
+        position: relative;
+        float: right;
+        width: 65%;
+    }
+
+    .containermain{
+        height: auto;
+        min-height: 100vh;
+        max-width: 100vw;
+        overflow: hidden;
+    }
+    
+    .titulo{
+        width: 100px;
+        position: relative;
+        float: left;
+        font-size: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .listanav{
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+        margin: 0.5em;
+    }
+
+    .listanav1{
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+        margin: 0.5em;
+    }
+
+
+    /* INDEX */
+    
+
+    div{
+        width: 100%;
+        position: relative;
+        float: left;
+        text-align: center;
+    }
+    div h2{
+        font-size: 2em;
+        position: relative;
+        float: none;
+        width: 100%;
+        margin: 2px;
+        margin-top: 25vh;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+    
+    .botoninicio{
+        font-size: 1.7em;
+        padding: 1px;
+        margin-top: 0vh;
+        float: none;
+        width: 250px;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+
+    /* REGISTRO */
+
+
+    .tituloRegistro{
+        font-size: 2.6em;
+        margin-top: 10vh;
+        margin-bottom: 3vh;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+    
+    .formulario{
+        position: relative;
+        float: left;
+        margin-top: 10vh;
+        margin-right: 5vh;
+        text-align: right;
+        width: 48%;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin: 0 auto;
+    }
+    
+    .formulario1{
+        position: relative;
+        float: right;
+        text-align: left;
+        margin-top: 10vh;
+        margin-left: 5vh;
+        width: 48%;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin: 0 auto;
+    }
+
+    .formularioRegistro, .formularioRegistro1{
+        font-size: 1em;
+        position: relative;
+        float: none;
+        width: 48%;
+        margin-left: 1vh;
+        margin: 7px 0;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .formularioRegistro2{
+        font-size: 1em;
+        position: relative;
+        float: none;
+        width: 30%;
+        margin-left: 1vh;
+        margin-top: 2px;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+    
+    .error{
+        width: 100%;
+        height: auto;
+        position: relative;
+        float: none;
+        text-align: center;
+    }
+
+    .errorRegistro{
+        font-size: 10px;
+        float: none;
+        margin-top: 7vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3vh;
+        width: 200px;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+
+    /* INICIAR SESION */
+
+
+    .formularioLogin{
+        font-size: 1em;
+        position: relative;
+        float: left;
+        margin-top: 40px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: none;     
+        height: auto;
+    }
+
+    .formularioLogin1{
+        font-size: 15px;
+        left: 50%;
+        top: 50%; 
+    }
+
+    .formularioLogin2{
+        font-size: 15px;
+        left: 50%;
+        top: 120%; 
+    }
+
+    .formularioLogin3{
+        font-size: 15px;
+        left: 50%;
+        top: 145%; 
+    }
+    .formularioLogin1,.formularioLogin2{
+        position: relative;
+        float: none;
+        width: 250px;
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+    .formularioLogin3{
+        position: relative;
+        float: none;
+        width: 80px;
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+
+    /* REGISTRO EXITOSO */
+
+
+    .registroExitoso{
+        font-size: 3em;
+        width: 100%;
+        float: none;
+        text-align: center;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin-top: 35vh;
+    }
+
+    .recuperarContraseña{
+        display: none;
+        position: relative;
+        float: none;
+        margin-top: 0;
+    }
+
+    .contraseña{
+        margin-top: 3vh;
+        font-size: 15px;
+        position: relative;
+        float: none;
+        color: white;
+        font: bold;
+    }
+
+    .formularioLogin4{
+        position: relative;
+        float: none;
+        width: 100px;
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+
+    /* PERFIL */
+
+
+    .listaPerfil{
+        margin: auto;
+        padding: 0;
+        width: 155px;
+        height: auto;
+        list-style: none;
+        background-color: #f4f4f4;
+        visibility: hidden;
+        z-index: 1;
+        transition: all 0.2s ease-in-out;
+        position: relative;
+        float: right;
+    }
+
+    .tituloPerfil{
+        position: relative;
+        float: right;
+        color: white;
+        font-size: 1em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .cajaPerfil {
+        width: 48%;
+        height: 100px;
+        float: right;
+    }
+
+    .cajaPerfil1 {
+        width: 48%;
+        height: 100px;
+        float: left;
+    }
+
+    .cajaPerfil2 {
+        width: 100%;
+        height: auto;
+        float: left;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .cajaPerfil3 {
+        width: 100%;
+        position: relative;
+        float: left;
+        height: auto;
+    }
+
+    .cajaPerfil4 {
+        width: 100%;
+        position: relative;
+        float: left;
+        height: auto;
+    }
+
+    .cajaPerfil5 {
+        width: 100%;
+        position: relative;
+        float: left;
+        height: auto;
+    }
+
+    li.fotoPerfil {
+        width: 100%;
+        height: 100%;
+    }
+
+    img.fotoPefil {
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .infoPerfil {
+        font-size: 0.8em;
+        color: black;
+        margin-left: 10px;
+        position: relative;
+        float: left;
+        height: 10px;
+        text-align: left;
+        width: 100%;
+        display: block;
+    }
+
+    p.cambiar1 {
+        color: black;
+        position: relative;
+        float: left;
+        font-size: 0.6em;
+        text-align: left;
+        margin-left: 5px;
+        width: 100%;
+        margin-bottom: -10px;
+    }
+
+    .cambiar2{
+        color: black;
+        position: relative;
+        float: left;
+        font-size: 0.6em;
+        text-align: left;
+        margin-left: 5px;
+        width: 100%;
+    }
+
+    button.cambiarBoton {
+        position: relative;
+        float: left;
+        font-weight: 500;
+        margin: 5px;
+        margin-top: 7px;
+    }
+
+    li.modificarPerfil{
+        position: relative;
+        float: left;
+        width: 100%;
+        font-weight: 600;
+        text-align: left;
+        margin: 5px;
+    }
+
+    a.modificarPerfil1 {
+        color: black;
+    }
+
+    form.eliminarEquipo{
+        color: black;
+        position: relative;
+        float: left;
+        width: 100%;
+        font-weight: 600;
+        text-align: left;
+        margin: 5px;
+    }
+
+    button.eliminarEquipo1{
+        border: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+    }
+
+    li.botonSalir{
+        position: relative;
+        float: left;
+        width: 100%;
+        font-weight: 600;
+        text-align: left;
+        margin: 5px;
+    }
+
+    a.botonSalir1{
+        color: black;
+    }
+
+
+    /* MODIFICAR PERFIL */
+
+
+    .navPerfil{
+        position: relative;
+        float: right;
+        width: 30%;
+    }
+
+    .titulo1{
+        width: 50px;
+        margin-left: 20px;
+        position: relative;
+        float: left;
+        font-size: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .lupa{
+        width: 110px;
+        margin-left: 0;
+        position: relative;
+        float: left;
+        font-size: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .listanav2{
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+        margin: 0.5em;
+    }
+
+    .formulario2{
+        position: relative;
+        float: none;
+        margin-top: 20vh;
+        text-align: center;
+        width: 100%;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+    .formularioRegistro5{
+        font-size: 0.8em;
+        position: relative;
+        float: none;
+        width: 20%; 
+        margin-top: 0;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .formularioRegistro3{
+        font-size: 0.8em;
+        position: relative;
+        float: none;
+        width: 20%;
+        margin-top: 1vh;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .formularioRegistro4{
+        font-size: 0.8em;
+        position: relative;
+        float: none;
+        width: 15%;
+        margin-left: 1vh;
+        margin-top: 2px;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .exito{
+        font-size: 1em;
+        color: white;
+        font-weight: 700;
+    }
+
+
+    /* BUSCADOR */
+
+
+    article{
+        height: 50%;
+        width: 36%;
+        margin-left: 60px;
+        float: left;
+        position: relative;
+        margin-top: 5vh;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    aside{
+        height: 50%;
+        width: 48%;
+        color: white;
+        font: bold;
+        position: relative;
+        margin-top: 5vh;
+        margin-bottom: 15vh;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    .p{
+        color: orange;
+        line-height: 50px;
+        text-align: left;
+    } 
+
+    .tablas{    
+        height: 300px;
+        width: 100%;
+        float: left;
+        overflow: scroll;
+        margin-bottom: 2vh;
+    }
+    
+    .filtros{
+        width: 100%;
+        position: relative;
+        float: left;
+        color: white;
+    }
+
+    .filtros-izq{
+        font-size: 10px;
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+    .filtros-der{
+        font-size: 10px;
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+
+    .table{
+        position: relative;
+        float: none;
+        width: 98%;
+    }
+
+    td, th {  
+        font-size: 0.6em;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+
+    .equipo{
+        font-size: 0.6em;
+        color: white;
+        height: 5px;
+        width: 24%;
+        padding: auto;
+        margin: auto;
+    }
+
+    .th, td {
+            padding: 10px;
+            text-align: center;
+    }
+
+}
+
+
+@media (min-width: 1922px) and (max-width: 2561px){
+
+
+    /* GENERAL */
+
+
+    main{
+        margin-bottom: 58px;
+    }
+    
+    header{
+        position: relative;
+        float: left;
+        height: 50px;
+    }
+
+    header h1 {
+        text-align: left;
+        float: left;
+        margin-left: -25px;
+    }
+
+    nav div{
+        position: relative;
+        float: right;
+        width: 65%;
+    }
+
+    .containermain{
+        height: auto;
+        min-height: 100vh;
+        max-width: 100vw;
+        overflow: hidden;
+    }
+    
+    .titulo{
+        width: 100px;
+        position: relative;
+        float: left;
+        font-size: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .listanav{
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+        margin: 0.5em;
+    }
+
+    .listanav1{
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+        margin: 0.5em;
+    }
+
+
+    /* INDEX */
+    
+
+    div{
+        width: 100%;
+        position: relative;
+        float: left;
+        text-align: center;
+    }
+    div h2{
+        font-size: 2em;
+        position: relative;
+        float: none;
+        width: 100%;
+        margin: 2px;
+        margin-top: 25vh;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+    
+    .botoninicio{
+        font-size: 1.7em;
+        padding: 1px;
+        margin-top: 0vh;
+        float: none;
+        width: 250px;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+
+    /* REGISTRO */
+
+
+    .tituloRegistro{
+        font-size: 2.6em;
+        margin-top: 10vh;
+        margin-bottom: 3vh;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+    
+    .formulario{
+        position: relative;
+        float: left;
+        margin-top: 10vh;
+        margin-right: 5vh;
+        text-align: right;
+        width: 48%;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin: 0 auto;
+    }
+    
+    .formulario1{
+        position: relative;
+        float: right;
+        text-align: left;
+        margin-top: 10vh;
+        margin-left: 5vh;
+        width: 48%;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin: 0 auto;
+    }
+
+    .formularioRegistro, .formularioRegistro1{
+        font-size: 1em;
+        position: relative;
+        float: none;
+        width: 48%;
+        margin-left: 1vh;
+        margin: 7px 0;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .formularioRegistro2{
+        font-size: 1em;
+        position: relative;
+        float: none;
+        width: 30%;
+        margin-left: 1vh;
+        margin-top: 2px;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+    
+    .error{
+        width: 100%;
+        height: auto;
+        position: relative;
+        float: none;
+        text-align: center;
+    }
+
+    .errorRegistro{
+        font-size: 10px;
+        float: none;
+        margin-top: 7vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3vh;
+        width: 200px;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+
+    /* INICIAR SESION */
+
+
+    .formularioLogin{
+        font-size: 1em;
+        position: relative;
+        float: left;
+        margin-top: 40px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: none;     
+        height: auto;
+    }
+
+    .formularioLogin1{
+        font-size: 15px;
+        left: 50%;
+        top: 50%; 
+    }
+
+    .formularioLogin2{
+        font-size: 15px;
+        left: 50%;
+        top: 120%; 
+    }
+
+    .formularioLogin3{
+        font-size: 15px;
+        left: 50%;
+        top: 145%; 
+    }
+    .formularioLogin1,.formularioLogin2{
+        position: relative;
+        float: none;
+        width: 250px;
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+    .formularioLogin3{
+        position: relative;
+        float: none;
+        width: 80px;
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+    .recuperarContraseña{
+        display: none;
+        position: relative;
+        float: none;
+        margin-top: 0;
+    }
+
+    .contraseña{
+        margin-top: 3vh;
+        font-size: 15px;
+        position: relative;
+        float: none;
+        color: white;
+        font: bold;
+    }
+
+    .formularioLogin4{
+        position: relative;
+        float: none;
+        width: 100px;
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+
+    /* REGISTRO EXITOSO */
+
+
+    .registroExitoso{
+        font-size: 3em;
+        width: 100%;
+        float: none;
+        text-align: center;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin-top: 35vh;
+    }
+
+
+    /* PERFIL */
+
+
+    .listaPerfil{
+        margin: auto;
+        padding: 0;
+        width: 155px;
+        height: auto;
+        list-style: none;
+        background-color: #f4f4f4;
+        visibility: hidden;
+        z-index: 1;
+        transition: all 0.2s ease-in-out;
+        position: relative;
+        float: right;
+    }
+
+    .tituloPerfil{
+        position: relative;
+        float: right;
+        color: white;
+        font-size: 1em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .cajaPerfil {
+        width: 48%;
+        height: 100px;
+        float: right;
+    }
+
+    .cajaPerfil1 {
+        width: 48%;
+        height: 100px;
+        float: left;
+    }
+
+    .cajaPerfil2 {
+        width: 100%;
+        height: auto;
+        float: left;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .cajaPerfil3 {
+        width: 100%;
+        position: relative;
+        float: left;
+        height: auto;
+    }
+
+    .cajaPerfil4 {
+        width: 100%;
+        position: relative;
+        float: left;
+        height: auto;
+    }
+
+    .cajaPerfil5 {
+        width: 100%;
+        position: relative;
+        float: left;
+        height: auto;
+    }
+
+    li.fotoPerfil {
+        width: 100%;
+        height: 100%;
+    }
+
+    img.fotoPefil {
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .infoPerfil {
+        font-size: 0.8em;
+        color: black;
+        margin-left: 10px;
+        position: relative;
+        float: left;
+        height: 10px;
+        text-align: left;
+        width: 100%;
+        display: block;
+    }
+
+    p.cambiar1 {
+        color: black;
+        position: relative;
+        float: left;
+        font-size: 0.6em;
+        text-align: left;
+        margin-left: 5px;
+        width: 100%;
+        margin-bottom: -10px;
+    }
+
+    .cambiar2{
+        color: black;
+        position: relative;
+        float: left;
+        font-size: 0.6em;
+        text-align: left;
+        margin-left: 5px;
+        width: 100%;
+    }
+
+    button.cambiarBoton {
+        position: relative;
+        float: left;
+        font-weight: 500;
+        margin: 5px;
+        margin-top: 7px;
+    }
+
+    li.modificarPerfil{
+        position: relative;
+        float: left;
+        width: 100%;
+        font-weight: 600;
+        text-align: left;
+        margin: 5px;
+    }
+
+    a.modificarPerfil1 {
+        color: black;
+    }
+
+    form.eliminarEquipo{
+        color: black;
+        position: relative;
+        float: left;
+        width: 100%;
+        font-weight: 600;
+        text-align: left;
+        margin: 5px;
+    }
+
+    button.eliminarEquipo1{
+        border: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+    }
+
+    li.botonSalir{
+        position: relative;
+        float: left;
+        width: 100%;
+        font-weight: 600;
+        text-align: left;
+        margin: 5px;
+    }
+
+    a.botonSalir1{
+        color: black;
+    }
+
+
+    /* MODIFICAR PERFIL */
+
+
+    .navPerfil{
+        position: relative;
+        float: right;
+        width: 30%;
+    }
+
+    .titulo1{
+        width: 50px;
+        margin-left: 20px;
+        position: relative;
+        float: left;
+        font-size: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .lupa{
+        width: 110px;
+        margin-left: 0;
+        position: relative;
+        float: left;
+        font-size: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .listanav2{
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+        margin: 0.5em;
+    }
+
+    .formulario2{
+        position: relative;
+        float: none;
+        margin-top: 20vh;
+        text-align: center;
+        width: 100%;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+    .formularioRegistro5{
+        font-size: 0.8em;
+        position: relative;
+        float: none;
+        width: 20%; 
+        margin-top: 0;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .formularioRegistro3{
+        font-size: 0.8em;
+        position: relative;
+        float: none;
+        width: 20%;
+        margin-top: 1vh;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .formularioRegistro4{
+        font-size: 0.8em;
+        position: relative;
+        float: none;
+        width: 15%;
+        margin-left: 1vh;
+        margin-top: 2px;
+        top: 0;
+        left: 0;
+        transform: none;
+    } 
+
+    .exito{
+        font-size: 1em;
+        color: white;
+        font-weight: 700;
+    }
+
+
+    /* BUSCADOR */
+
+
+    article{
+        height: 50%;
+        width: 36%;
+        margin-left: 60px;
+        float: left;
+        position: relative;
+        margin-top: 5vh;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    aside{
+        height: 50%;
+        width: 48%;
+        color: white;
+        font: bold;
+        position: relative;
+        margin-top: 5vh;
+        margin-bottom: 15vh;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    .p{
+        color: orange;
+        line-height: 50px;
+        text-align: left;
+    } 
+
+    .tablas{    
+        height: 300px;
+        width: 100%;
+        float: left;
+        overflow: scroll;
+        margin-bottom: 2vh;
+    }
+    
+    .filtros{
+        width: 100%;
+        position: relative;
+        float: left;
+        color: white;
+    }
+
+    .filtros-izq{
+        font-size: 10px;
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+    .filtros-der{
+        font-size: 10px;
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+
+    .table{
+        position: relative;
+        float: none;
+        width: 98%;
+    }
+
+    td, th {  
+        font-size: 0.6em;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+
+    .equipo{
+        font-size: 0.6em;
+        color: white;
+        height: 5px;
+        width: 24%;
+        padding: auto;
+        margin: auto;
+    }
+
+    .th, td {
+            padding: 10px;
+            text-align: center;
+    }
+
+}
+
+
+@media (min-width: 2562px){
+
+
+    /* GENERAL */
+
+
+    main{
+        margin-bottom: 58px;
+    }
+    
+    header{
+        position: relative;
+        float: left;
+        height: 50px;
+    }
+
+    header h1 {
+        text-align: left;
+        float: left;
+        margin-left: -25px;
+    }
+
+    nav div{
+        position: relative;
+        float: right;
+        width: 65%;
+    }
+
+    .containermain{
+        height: auto;
+        min-height: 100vh;
+        max-width: 100vw;
+        overflow: hidden;
+    }
+    
+    .titulo{
+        width: 100px;
+        position: relative;
+        float: left;
+        font-size: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .listanav{
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+        margin: 0.5em;
+    }
+
+    .listanav1{
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+        margin: 0.5em;
+    }
+
+
+    /* INDEX */
+    
+
+    div{
+        width: 100%;
+        position: relative;
+        float: left;
+        text-align: center;
+    }
+    div h2{
+        font-size: 2em;
+        position: relative;
+        float: none;
+        width: 100%;
+        margin: 2px;
+        margin-top: 25vh;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+    
+    .botoninicio{
+        font-size: 1.7em;
+        padding: 1px;
+        margin-top: 0vh;
+        float: none;
+        width: 250px;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+
+    /* REGISTRO */
+
+
+    .tituloRegistro{
+        font-size: 2.6em;
+        margin-top: 10vh;
+        margin-bottom: 3vh;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+    
+    .formulario{
+        position: relative;
+        float: left;
+        margin-top: 10vh;
+        margin-right: 5vh;
+        text-align: right;
+        width: 48%;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin: 0 auto;
+    }
+    
+    .formulario1{
+        position: relative;
+        float: right;
+        text-align: left;
+        margin-top: 10vh;
+        margin-left: 5vh;
+        width: 48%;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin: 0 auto;
+    }
+
+    .formularioRegistro, .formularioRegistro1{
+        font-size: 1em;
+        position: relative;
+        float: none;
+        width: 48%;
+        margin-left: 1vh;
+        margin: 7px 0;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .formularioRegistro2{
+        font-size: 1em;
+        position: relative;
+        float: none;
+        width: 30%;
+        margin-left: 1vh;
+        margin-top: 2px;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+    
+    .error{
+        width: 100%;
+        height: auto;
+        position: relative;
+        float: none;
+        text-align: center;
+    }
+
+    .errorRegistro{
+        font-size: 10px;
+        float: none;
+        margin-top: 7vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3vh;
+        width: 200px;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+
+    /* INICIAR SESION */
+
+
+    .formularioLogin{
+        font-size: 1em;
+        position: relative;
+        float: left;
+        margin-top: 40px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: none;     
+        height: auto;
+    }
+
+    .formularioLogin1{
+        font-size: 15px;
+        left: 50%;
+        top: 50%; 
+    }
+
+    .formularioLogin2{
+        font-size: 15px;
+        left: 50%;
+        top: 120%; 
+    }
+
+    .formularioLogin3{
+        font-size: 15px;
+        left: 50%;
+        top: 145%; 
+    }
+    .formularioLogin1,.formularioLogin2{
+        position: relative;
+        float: none;
+        width: 250px;
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+    .formularioLogin3{
+        position: relative;
+        float: none;
+        width: 80px;
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+    .recuperarContraseña{
+        display: none;
+        position: relative;
+        float: none;
+        margin-top: 0;
+    }
+
+    .contraseña{
+        margin-top: 3vh;
+        font-size: 15px;
+        position: relative;
+        float: none;
+        color: white;
+        font: bold;
+    }
+
+    .formularioLogin4{
+        position: relative;
+        float: none;
+        width: 100px;
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+
+    /* REGISTRO EXITOSO */
+
+
+    .registroExitoso{
+        font-size: 3em;
+        width: 100%;
+        float: none;
+        text-align: center;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin-top: 35vh;
+    }
+
+
+    /* PERFIL */
+
+
+    .listaPerfil{
+        margin: auto;
+        padding: 0;
+        width: 155px;
+        height: auto;
+        list-style: none;
+        background-color: #f4f4f4;
+        visibility: hidden;
+        z-index: 1;
+        transition: all 0.2s ease-in-out;
+        position: relative;
+        float: right;
+    }
+
+    .tituloPerfil{
+        position: relative;
+        float: right;
+        color: white;
+        font-size: 1em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .cajaPerfil {
+        width: 48%;
+        height: 100px;
+        float: right;
+    }
+
+    .cajaPerfil1 {
+        width: 48%;
+        height: 100px;
+        float: left;
+    }
+
+    .cajaPerfil2 {
+        width: 100%;
+        height: auto;
+        float: left;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .cajaPerfil3 {
+        width: 100%;
+        position: relative;
+        float: left;
+        height: auto;
+    }
+
+    .cajaPerfil4 {
+        width: 100%;
+        position: relative;
+        float: left;
+        height: auto;
+    }
+
+    .cajaPerfil5 {
+        width: 100%;
+        position: relative;
+        float: left;
+        height: auto;
+    }
+
+    li.fotoPerfil {
+        width: 100%;
+        height: 100%;
+    }
+
+    img.fotoPefil {
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .infoPerfil {
+        font-size: 0.8em;
+        color: black;
+        margin-left: 10px;
+        position: relative;
+        float: left;
+        height: 10px;
+        text-align: left;
+        width: 100%;
+        display: block;
+    }
+
+    p.cambiar1 {
+        color: black;
+        position: relative;
+        float: left;
+        font-size: 0.6em;
+        text-align: left;
+        margin-left: 5px;
+        width: 100%;
+        margin-bottom: -10px;
+    }
+
+    .cambiar2{
+        color: black;
+        position: relative;
+        float: left;
+        font-size: 0.6em;
+        text-align: left;
+        margin-left: 5px;
+        width: 100%;
+    }
+
+    button.cambiarBoton {
+        position: relative;
+        float: left;
+        font-weight: 500;
+        margin: 5px;
+        margin-top: 7px;
+    }
+
+    li.modificarPerfil{
+        position: relative;
+        float: left;
+        width: 100%;
+        font-weight: 600;
+        text-align: left;
+        margin: 5px;
+    }
+
+    a.modificarPerfil1 {
+        color: black;
+    }
+
+    form.eliminarEquipo{
+        color: black;
+        position: relative;
+        float: left;
+        width: 100%;
+        font-weight: 600;
+        text-align: left;
+        margin: 5px;
+        margin-left: 1px;
+        font-family: arial;
+    }
+
+    button.eliminarEquipo1{
+        border: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+    }
+
+    li.botonSalir{
+        position: relative;
+        float: left;
+        width: 100%;
+        font-weight: 600;
+        text-align: left;
+        margin: 5px;
+    }
+
+    a.botonSalir1{
+        color: black;
+
+    }
+
+
+    /* MODIFICAR PERFIL */
+
+
+    .navPerfil{
+        position: relative;
+        float: right;
+        width: 30%;
+    }
+
+    .titulo1{
+        width: 50px;
+        margin-left: 20px;
+        position: relative;
+        float: left;
+        font-size: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .lupa{
+        width: 110px;
+        margin-left: 0;
+        position: relative;
+        float: left;
+        font-size: 0.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .listanav2{
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        height: 50px;
+        line-height: 50px;
+        margin: 0.5em;
+    }
+
+    .formulario2{
+        position: relative;
+        float: none;
+        margin-top: 20vh;
+        text-align: center;
+        width: 100%;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+    .formularioRegistro5{
+        font-size: 0.8em;
+        position: relative;
+        float: none;
+        width: 20%; 
+        margin-top: 0;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .formularioRegistro3{
+        font-size: 0.8em;
+        position: relative;
+        float: none;
+        width: 20%;
+        margin-top: 1vh;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .formularioRegistro4{
+        font-size: 0.8em;
+        position: relative;
+        float: none;
+        width: 15%;
+        margin-left: 1vh;
+        margin-top: 2px;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .exito{
+        font-size: 1em;
+        color: white;
+        font-weight: 700;
+    }
+
+
+    /* BUSCADOR */
+
+
+    article{
+        height: 50%;
+        width: 36%;
+        margin-left: 60px;
+        float: left;
+        position: relative;
+        margin-top: 5vh;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    aside{
+        height: 50%;
+        width: 48%;
+        color: white;
+        font: bold;
+        position: relative;
+        margin-top: 5vh;
+        margin-bottom: 15vh;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    .p{
+        color: orange;
+        line-height: 50px;
+        text-align: left;
+    } 
+
+    .tablas{    
+        height: 300px;
+        width: 100%;
+        float: left;
+        overflow: scroll;
+        margin-bottom: 2vh;
+    }
+    
+    .filtros{
+        width: 100%;
+        position: relative;
+        float: left;
+        color: white;
+    }
+
+    .filtros-izq{
+        font-size: 10px;
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+    .filtros-der{
+        font-size: 10px;
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+
+    .table{
+        position: relative;
+        float: none;
+        width: 98%;
+    }
+
+    td, th {  
+        font-size: 0.6em;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+
+    .equipo{
+        font-size: 0.6em;
+        color: white;
+        height: 5px;
+        width: 24%;
+        padding: auto;
+        margin: auto;
+    }
+
+    .th, td {
+            padding: 10px;
+            text-align: center;
+    }
+}
+

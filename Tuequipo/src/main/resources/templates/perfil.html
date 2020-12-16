@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil</title>
+    <link href="/css/styles.css" rel="stylesheet">
+    <link rel="icon" href="/img/friedpotato.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="containermain">
+        <header>
+            <h1>
+                <a name='lupa' class="titulo1" href="/buscador">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                        <path fill-rule="evenodd"
+                            d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                    </svg>
+                </a>
+                <label for="lupa" class="lupa" onMouseover="this.style.color='orange'"
+                    onMouseout="this.style.color='white'">Busca Tu Rival</label>
+            </h1>
+            <nav class="navPerfil">
+                <div>
+                    <ul>
+                        <li> <a class="listanav2" href="/logout"> Cerrar Sesión</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="formulario2">
+                <form class="cajaRegistro" action="/usuario/actualizar-perfil" method="POST"
+                    enctype="multipart/form-data">
+                    <input type="hidden" name="nombre" th:value="${equipo.nombre}">
+                    </ul>
+                    <input class="formularioRegistro3" type="tel" name="numero1" placeholder="Telefono capitan" required
+                        th:value="${equipo.numero1}"><br>
+                    <input class="formularioRegistro3" type="tel" name="numero2" placeholder="Telefono co-capitan"
+                        required th:value="${equipo.numero2}"><br>
+                    <input class="formularioRegistro3" type="password" name="clave1" placeholder="Contraseña"
+                        required><br>
+                    <input class="formularioRegistro3" type="password" name="clave2" placeholder="Repetir contraseña"
+                        required><br>
+                    <input class="formularioRegistro3" type="text" name="descripcion"
+                        placeholder="Descripcion de su equipo" th:value="${equipo.descripcion}"><br>
+
+                    <select class="formularioRegistro3" name="turno" type="text" id="turno">
+                        <option value="MANANA">MAÑANA</option>
+                        <option value="TARDE">TARDE</option>
+                        <option value="NOCHE">NOCHE</option>
+                    </select><br>
+                    <select class="formularioRegistro3" name="zona" id="zona">
+                        <option value="CAPITAL"> CAPITAL</option>
+                        <option value="GODOY_CRUZ"> GODOY CRUZ</option>
+                        <option value="GUAYMALLEN"> GUAYMALLEN</option>
+                        <option value="LAS_HERAS"> LAS HERAS</option>
+                        <option value="LUJAN_DE_CUYO"> LUJAN DE CUYO</option>
+                        <option value="MAIPU">MAIPU</option>
+                    </select><br>
+                    <select class="formularioRegistro3" name="dia" id="dia">
+                        <option value="LUNES"> LUNES</option>
+                        <option value="MARTES">MARTES</option>
+                        <option value="MIERCOLES"> MIERCOLES</option>
+                        <option value="JUEVES"> JUEVES</option>
+                        <option value="VIERNES"> VIERNES</option>
+                        <option value="SABADO"> SABADO</option>
+                        <option value="DOMINGO"> DOMINGO</option>
+                    </select><br>
+                    <select class="formularioRegistro3" name="cantidadJugadores" id="cantidadJugadores">
+                        <option value="CINCO">5</option>
+                        <option value="SIETE">7</option>
+                        <option value="ONCE">11</option>
+                    </select><br><br>
+                    <input class="formularioRegistro5" type="file" name="archivo" size="30"><br>
+                    <input class="formularioRegistro4" type="submit" value="Actualizar datos">
+
+                    <p class="exito" th:text="${exito}" style="color:white;"></p>
+
+                </form>
+
+            </div>
+
+        </main>
+        <footer>
+            <div>
+                <p> Copyright © 2020 - Tu Equipo </p>
+            </div>
+        </footer>
+    </div>
+    <script th:inline="javascript">
+        function selected(obj, str) {
+            for (var i = 0, len = obj.length; i < len; i++) {
+                if (obj[i].value === str) {
+                    obj[i].selected = true;
+                    break;
+                }
+            }
+        }
+        selected(document.getElementById("turno"), [[${ equipo.turno }]]);
+        selected(document.getElementById("cantidadJugadores"), [[${ equipo.cantidadJugadores }]]);
+        selected(document.getElementById("zona"), [[${ equipo.zona }]]);
+        selected(document.getElementById("dia"), [[${ equipo.dia }]]);
+
+        if ([[${ equipo.disponible }]]) {
+            document.getElementById("disponible_true").checked = true;
+        } else {
+            document.getElementById("disponible_false").checked = true;
+        }
+
+    </script>
+</body>
+
+</html>

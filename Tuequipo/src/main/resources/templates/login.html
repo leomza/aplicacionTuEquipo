@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Equipo, Encontra tu proximo rival</title>
+    <link href="/css/styles.css" rel="stylesheet">
+    <link rel="icon" href="/img/friedpotato.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="containermain">
+        <header>
+            <h1> <a class="titulo" href="/"> Tu Equipo</a> </h1>
+            <nav>
+                <div>
+                    <ul>
+                        <li> <a class="listanav" href="/Registro"> Registrarse</a></li>
+                        <li> <a class="listanav1" href="/login"> Iniciar Sesion</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <form action="/logincheck" method="POST" class="formularioLogin">
+
+                    <p th:if="${error !=null}" th:text="${error}" style="color:white;"></p>
+                    <p th:if="${logout !=null}" th:text="${logout}" style="color:white;"></p>
+
+                    <input type="text" class="formularioLogin1" id="usuario" placeholder="Usuario" name="nombre"
+                        required><br>
+                    <input type="password" class="formularioLogin2" id="contraseña" placeholder="Contraseña"
+                        name="clave1" required><br>
+                    <input type="submit" class="formularioLogin3" value="Ingresar">
+                </form>
+            </div>
+            <a id="contraseña" class="contraseña" onclick="pass();"> ¿Te olvidaste tu contraseña?</a>
+            <div class="recuperarContraseña" id="sendPass">
+                <form action="/recuperarPass" method="POST">
+                    <input class="formularioLogin1" type="text" placeholder="Usuario" name="name"><br>
+                    <input class="formularioLogin4" type="submit" value="Reestablecer" onclick="alerta()">
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <p> Copyright © 2020 - Tu Equipo </p>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        function pass() {
+            let div = document.getElementById("sendPass");
+            if (div.style.display === 'block') {
+                div.style.display = 'none';
+            } else {
+                div.style.display = 'block';
+            }
+        }
+        
+        function alerta(){
+            alert("Se ha enviado un codigo de recuperacion a su email");
+        }
+    </script>
+
+</body>
+
+</html>
